@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
+.menuoptions{
+	text-align: center;
+	font-size: 4vmin;
+	font-family: 'Imprima', sans-serif;
+	font-weight: 600;
+	line-height: 1.7;
+	color: white;
+}
+
+.menuIt:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#mpRank{
+	font-size: 24pt;
+	overflow: auto;
+}
+
+.authentification{
+	background-color:rgba(211,211,211, 0.2);
+	top:15%;
+	padding-top: 60px;
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	font-size: 3.5vmin;
+	left: 20%;
+	display: none;
+}
+
+.singleplayer{
+	top:15%;
+	padding-top: 50px;
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	font-size: 3.5vmin;
+	left: 20%;
+	display: none;
+}
+
+.inf {
+	word-spacing: 20pt;
+	font-size: 20pt;
+	text-align: center;
+}
+
+.input {
+	font-size: 14pt;
+}
+
+.button {
+	background: #273368;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 1.75vmin;
+    border-radius: 30px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 26px;
+    padding-right: 26px;
+    text-align: center;
+}
+
+.button:hover {
+  	cursor: pointer;
+}
+
+#turn_mp2{
+	margin-top: -360px;
+	color:rgba(0, 0, 0, 0);
+	font-size: 30pt;
+	font-weight: bold;
+	-webkit-text-stroke: 0px #fcff96;
+}
+
+#turn_mp{
+	margin-top: -100px;
+	margin-bottom: 120px;
+	color:rgba(0, 0, 0, 0);
+	font-size: 26pt;
+	font-weight: bold;
+	-webkit-text-stroke: 0px #fcff96;
+}
+
+.helpB{
+	margin-left: 2%;
+	margin-top: -4%;
+	display: none;
+	position: absolute;
+}
+
+.setting{
+	background-color:rgba(211,211,211, 0.2);
+	text-align:left;
+	top:15%;
+	padding-top: 50px;
+	position: absolute;
+	padding-left: 60px;
+	width: 55%;
+	height: 60%;
+	font-size: 2.5vmin;
+	left: 18%;
+	display: none;
+}
+
+.nm{
+	font-size: 2.5vmin;
+}
+
+.scores{
+	background-color:rgba(211,211,211, 0.2);
+	text-align: center;
+	top:15%;
+	padding-top: 50px;
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	left: 20%;
+	font-size: 3.5vmin;
+	display: none;
+}
+
+.instructions{
+	background-color:rgba(211,211,211, 0.2);
+	top:10%;
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	font-size: 3vmin;
+	left: 15%;
+	display: none;
+}
+
+.instructions2{
+	background-color:rgba(211,211,211, 0.8);
+	top:10%;
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	font-size: 3vmin;
+	left: 15%;
+	display: none;
+}
+
+.instructions p {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.stack{
+	word-spacing: 19.5px;
+}
+
+.butonsSettings{
+	word-spacing: 20px;
+	margin-left: 32%;
+}
+
+.ti {
+	text-align: center;
+}
+
+.mode{
+	line-height:150%;
+}
+
+.modeoptions {
+	font-size: 3.5vmin;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+body{
+	background-image: url("./background_02.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	margin-top: 4%;
+	text-align: center;
+}
+
+.match{
+	height:70%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.tabuleiro{
+	height: 80vh;
+	padding-top: 11%;
+	display: none;
+}
+.r1{
+	position: relative;
+	text-align:center;
+	width:100%;
+	height:25%;
+	margin: auto;
+	margin-top: 0%;
+}
+
+#nimHome {
+	font-family: 'Henny Penny', cursive;
+	font-size:  200pt;
+	color: #99c9de;	
+}
+
+#nimHome:hover {
+	cursor: default;
+}
+
+#nimHome2 {
+	font-family: 'Henny Penny', cursive;
+	font-size:  90pt;
+	color: white;	
+}
+
+#nimHome2:hover {
+	cursor: pointer;
+}
+
+.home {
+	text-align: center;
+	margin-bottom: -3%;
+	padding-top: 24vh;
+}
+
+.home2 {
+	display: none;
+	position: absolute;
+	margin-top: 3%;
+    margin-left: 3%;
+}
+
