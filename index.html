@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<script src="./resources/script1.js"></script>
-		<link rel="stylesheet" href="./resources/style1.css" type="text/css">
+		<link rel="stylesheet" href="./resources/style.css" type="text/css">
 		<link rel="icon" href="https://i.gyazo.com/e360fcbd27071dfcbf0e200cb5600c4b.png" type="image/png">
-		<link type="text/css" rel="stylesheet" href="./resources/style2.css"/>
 		<script type="text/javascript" src = "./resources/script2.js"></script>
 		<script type="text/javascript" src = "./resources/script3.js"></script>
 		<meta charset="UTF-8">
@@ -32,48 +31,55 @@
 		<div id="scores" class="scores">
 			<table style="width:100%">
 			  <tr>
-					<th>Rows</th>
+				<th>Gem rows</th>
 			    <th id="user1">Player</th>
 			    <th id="user2">Com</th>
 			  </tr>
+			<div class="white-line"></div>
 			  <tr>
-					<td>4</td>
+				<td>4</td>
 			    <td id="u4">0</td>
 			    <td id="b4">0</td>
 			  </tr>
+			<div class="white-line"></div>
 				<tr>
 				 <td>5</td>
 				 <td id="u5">0</td>
 				 <td id="b5">0</td>
 			 </tr>
+			<div class="white-line"></div>
 			 <tr>
 				 <td>6</td>
 				 <td id="u6">0</td>
 				 <td id="b6">0</td>
 			 </tr>
+			<div class="white-line"></div>
 			 <tr>
 				 <td>7</td>
 				 <td id="u7">0</td>
 				 <td id="b7">0</td>
 			 </tr>
+			<div class="white-line"></div>
 			 <tr>
 				 <td>8</td>
 				 <td id="u8">0</td>
 				 <td id="b8">0</td>
 			 </tr>
+			 <div class="white-line"></div>
 			 <tr>
 				 <td>9</td>
 				 <td id="u9">0</td>
 				 <td id="b9">0</td>
 			 </tr>
+			<div class="white-line"></div>
 			 <tr>
 				 <td>10</td>
 				 <td id="u10">0</td>
 				 <td id="b10">0</td>
 			 </tr>
+			<div class="white-line"></div>
 		 </table>
 		 <br>
-		 <input type="button" class="button" value="Back" onclick="BackFromScore();">
 		</div>
 
 		<!-- MULTIPLAYER -->
@@ -189,26 +195,17 @@
 		<!-- HELP -->
 		<div id="instructions" class="instructions">
 			<h3>Instructions</h3>
-			<p> NIM starts with rows of objects</p>
-			<p> Players take turns taking any number of objects from one of the rows </p>
-			<p> The last player to remove an object wins </p>
-			<p> Adjust the difficulty and the size of the board by going to the settings</p>
-			<button class="button" value="Back" onclick="GoBack();"> Back </button>
-		</div>
-
-		<div id="instructions2" class="instructions2">
-			<h3>Instructions</h3>
-			<p> NIM starts with rows of objects</p>
-			<p> Players take turns taking any number of objects from one of the rows </p>
-			<p> The last player to remove an object wins </p>
-			<p> Adjust the difficulty and the size of the board by going to the settings</p>
-			<button class="button" value="Back" onclick="GoBack2();"> Back </button>
+			<div class="white-line"></div>
+			<p> NIM starts with rows of objects. 
+				The Players take turns taking any number of objects from one of the rows. 
+				The last player to remove an object wins.
+			<br><br> Adjust the difficulty and the size of the board by going to the settings.
+			<div class="white-line"></div>
 		</div>
 
 	</div>
 
 	<div id="helpB" class="helpB">
-		<div class="button" onclick="Help2();">Help</div><br>
 		<div class="button" onclick="BackFromBoard();">Back</div>
 	</div>
 
