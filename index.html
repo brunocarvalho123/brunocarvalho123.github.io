@@ -3,7 +3,7 @@
 	<head>
 		<script src="./resources/script1.js"></script>
 		<link rel="stylesheet" href="./resources/style.css" type="text/css">
-		<link rel="icon" href="https://i.gyazo.com/e360fcbd27071dfcbf0e200cb5600c4b.png" type="image/png">
+		<link rel="icon" href="./resources/favicon.png" type="image/png">
 		<script type="text/javascript" src = "./resources/script2.js"></script>
 		<script type="text/javascript" src = "./resources/script3.js"></script>
 		<meta charset="UTF-8">
@@ -30,7 +30,7 @@
 		<!-- SCORE TABLE -->
 		<div id="scores" class="scores">
 			<table style="width:100%">
-			  <tr>
+			  <tr class="tr-titles">
 				<th>Gem rows</th>
 			    <th id="user1">Player</th>
 			    <th id="user2">Com</th>
@@ -158,15 +158,15 @@
 
 		<!-- SETTINGS -->
 		<div id="setting" class="setting">
-			<div id="stack" class="stack"><b>Rows:</b>
+			<div id="stack" class="stack"><span class="bold-settings">Rows:</span>
 				<input type="range" min="4" max="10" id="range1" onchange="updateTextInput1(this.value);">
 				<input type="text" class=ti id="textInput1" size="2" value="7">
 			</div>
-			<div id="difficulty" class="difficulty"><b>Difficulty: </b>
+			<div id="difficulty" class="difficulty"><span class="bold-settings">Difficulty:</span>
 				<input type="range" min="1" max="3" id="range2" onchange="updateTextInput2(this.value);">
 				<input type="text" class=ti id="textInput2" size="2" value="2"><br>
 			</div><br>
-			<div id="mode_ai" class="mode"><b> Mode:</b>
+			<div id="mode_ai" class="mode"><span class="bold-settings">Mode:</span>
 				<form>
 					<div id="mode_ai_options" class="modeoptions">
 					    <input type="radio"  name="play" value="normal"  id="normalmode_ai" class="normalmode">
@@ -176,7 +176,7 @@
 					</div>
 				</form>
 			</div>
-			<div id="mode" class="mode"><b> Who goes first:</b>
+			<div id="mode" class="mode"><span class="bold-settings">Who goes first:</span>
 				<form>
 					<div id="modeoptions" class="modeoptions">
 					    <input type="radio"  name="play" value="normal"  id="normalmode" class="normalmode">
@@ -196,9 +196,7 @@
 		<div id="instructions" class="instructions">
 			<h3>Instructions</h3>
 			<div class="white-line"></div>
-			<p> NIM starts with rows of objects. 
-				The Players take turns taking any number of objects from one of the rows. 
-				The last player to remove an object wins.
+			<p> Nim starts with rows of gems. The players take turns, each taking any number of gems from one of the rows. The last player to remove a gem wins.
 			<br><br> Adjust the difficulty and the size of the board by going to the settings.
 			<div class="white-line"></div>
 		</div>
