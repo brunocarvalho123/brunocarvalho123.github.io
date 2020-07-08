@@ -29,55 +29,47 @@
 
 		<!-- SCORE TABLE -->
 		<div id="scores" class="scores">
-			<table style="width:100%">
+			<table class="score-table">
 			  <tr class="tr-titles">
 				<th>Gem rows</th>
 			    <th id="user1">Player</th>
 			    <th id="user2">Com</th>
 			  </tr>
-			<div class="white-line"></div>
 			  <tr>
 				<td>4</td>
 			    <td id="u4">0</td>
 			    <td id="b4">0</td>
 			  </tr>
-			<div class="white-line"></div>
 				<tr>
 				 <td>5</td>
 				 <td id="u5">0</td>
 				 <td id="b5">0</td>
 			 </tr>
-			<div class="white-line"></div>
 			 <tr>
 				 <td>6</td>
 				 <td id="u6">0</td>
 				 <td id="b6">0</td>
 			 </tr>
-			<div class="white-line"></div>
 			 <tr>
 				 <td>7</td>
 				 <td id="u7">0</td>
 				 <td id="b7">0</td>
 			 </tr>
-			<div class="white-line"></div>
 			 <tr>
 				 <td>8</td>
 				 <td id="u8">0</td>
 				 <td id="b8">0</td>
 			 </tr>
-			 <div class="white-line"></div>
 			 <tr>
 				 <td>9</td>
 				 <td id="u9">0</td>
 				 <td id="b9">0</td>
 			 </tr>
-			<div class="white-line"></div>
 			 <tr>
 				 <td>10</td>
 				 <td id="u10">0</td>
 				 <td id="b10">0</td>
 			 </tr>
-			<div class="white-line"></div>
 		 </table>
 		 <br>
 		</div>
@@ -158,15 +150,20 @@
 
 		<!-- SETTINGS -->
 		<div id="setting" class="setting">
-			<div id="stack" class="stack"><span class="bold-settings">Rows:</span>
+			<div id="stack" class="stack">
+				<span class="bold-settings">Rows:</span>
 				<input type="range" min="4" max="10" id="range1" onchange="updateTextInput1(this.value);">
 				<input type="text" class=ti id="textInput1" size="2" value="7">
 			</div>
-			<div id="difficulty" class="difficulty"><span class="bold-settings">Difficulty:</span>
+			<div id="difficulty" class="difficulty">
+				<span class="bold-settings">Difficulty:</span>
 				<input type="range" min="1" max="3" id="range2" onchange="updateTextInput2(this.value);">
 				<input type="text" class=ti id="textInput2" size="2" value="2"><br>
 			</div><br>
-			<div id="mode_ai" class="mode"><span class="bold-settings">Mode:</span>
+
+
+			<!--<div id="mode_ai" class="mode">
+				<span class="bold-settings">Mode:</span>
 				<form>
 					<div id="mode_ai_options" class="modeoptions">
 					    <input type="radio"  name="play" value="normal"  id="normalmode_ai" class="normalmode">
@@ -176,7 +173,8 @@
 					</div>
 				</form>
 			</div>
-			<div id="mode" class="mode"><span class="bold-settings">Who goes first:</span>
+			<div id="mode" class="mode">
+				<span class="bold-settings">Who goes first:</span>
 				<form>
 					<div id="modeoptions" class="modeoptions">
 					    <input type="radio"  name="play" value="normal"  id="normalmode" class="normalmode">
@@ -185,7 +183,44 @@
 						<span id="im" class="nm">Com</span>
 					</div>
 				</form>
+			</div>-->
+
+			<div id="mode_ai" class="mode">
+				<span class="bold-settings">Mode:</span>
+				<form>
+					<div id="mode_ai_options" class="modeoptions">
+						<label class="container nm" id="nm_ai">Player vs Com
+							<input type="radio" checked="checked" name="play" value="normal" id="normalmode_ai" class="normalmode">
+							<span class="checkmark"></span>
+						</label>
+					    <br>
+					    <label class="container nm" id="im_ai">Player vs Players
+					    	<input type="radio" name="play" value="instead" id="insteadmode_ai" class="insteadmode">
+					    	<span class="checkmark"></span>
+					    </label>
+					</div>
+				</form>
 			</div>
+			<div id="mode" class="mode">
+				<span class="bold-settings">Who goes first:</span>
+				<form>
+					<div id="modeoptions" class="modeoptions">
+						<label class="container nm" id="nm">User
+							<input type="radio" checked="checked" name="play" value="normal" id="normalmode" class="normalmode">
+							<span class="checkmark"></span>
+						</label>
+					    <br>
+						<label class="container nm" id="im">Com
+							<input type="radio" name="play" value="instead" id="insteadmode" class="insteadmode">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</form>
+			</div>
+
+
+
+
 			<div id="butonsSettings" class="butonsSettings">
 				<br><input type="button" id="savechanges" class="button" value="Save" onclick="settings()">
 				<input type="button" class="button" value="Back" onclick="BackFromSettings();">

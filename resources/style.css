@@ -81,6 +81,7 @@ h1 {
 .menuIt:hover {
 	cursor: pointer;
 	text-decoration: underline;
+	text-decoration-color: #f2edb8;
 }
 
 #mpRank{
@@ -187,7 +188,6 @@ h1 {
 	text-align: center;
 	top:33%;
 	left: 33%;
-	padding-top: 50px;
 	position: absolute;
 	width: 35%;
 	font-size: 3vmin;
@@ -229,7 +229,7 @@ h1 {
 .ti {
 	text-align: center;
 	background: none;
-	border: 0.15vw #99c9de solid;
+	border: 0.13vw #99c9de solid;
 	border-radius: 8px;
 	font-family: 'Signika', sans-serif;
 	font-size: 3vmin;
@@ -259,14 +259,18 @@ h1 {
 
 .score-table {
 	width: 100%;
-	border-collapse:separate; 
-	border-spacing:0 25px;
+	border-collapse:collapse; 
 }
 
 th, td {
 	width: 35px;
-  	border-bottom: 3px solid #99c9de;	
+  	border-bottom: 0.15vw solid #99c9de;	
 }
+
+td {
+	padding-top: 2vh;
+}
+
 
 .tr-titles th{
 	font-weight: 400;
@@ -274,4 +278,52 @@ th, td {
 
 .difficulty {
 	margin-top: 15px;
+}
+
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	padding-left: 35px; 
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	left: 0;
+	height: 2vh;
+	width: 2vh;
+	border-radius: 100%;
+	border: 0.13vw solid #99c9de;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container input:checked ~ .checkmark {
+	border: 0.13vw solid #99c9de;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.container .checkmark:after {
+	width: 1.48vh;
+	height: 1.48vh;
+	border-radius: 100%;
+	background: #99c9de;
 }
