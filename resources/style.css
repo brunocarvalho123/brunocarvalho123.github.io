@@ -8,7 +8,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: -7vh;
-	height: 97vh; 
+	height: 97vh;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1 {
 #nimHome {
 	font-family: 'Henny Penny', cursive;
 	font-size:  11.5vw;
-	color: #99c9de;	
+	color: #99c9de;
 }
 
 #nimHome:hover {
@@ -48,7 +48,7 @@ h1 {
 #nimHome2 {
 	font-family: 'Henny Penny', cursive;
 	font-size:  3.2vw;
-	color: white;	
+	color: white;
 }
 
 #nimHome2:hover {
@@ -87,6 +87,10 @@ h1 {
 #mpRank{
 	font-size: 24pt;
 	overflow: auto;
+}
+
+#savechanges {
+	display: none;
 }
 
 .authentification{
@@ -208,14 +212,14 @@ h1 {
 	display: none;
 	position: absolute;
 	margin-left: 5vw;
-	
+
 }
 
 .instructions p {
 	margin: -1% 0;
 }
 
-.instructions h3 {	
+.instructions h3 {
 	text-align: center;
 	font-weight: 400;
 	font-size: 4vmin;
@@ -251,7 +255,7 @@ h1 {
 }
 
 .white-line {
-	background-color: #99c9de;	
+	background-color: #99c9de;
 	padding: 1px;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -259,12 +263,12 @@ h1 {
 
 .score-table {
 	width: 100%;
-	border-collapse:collapse; 
+	border-collapse:collapse;
 }
 
 th, td {
 	width: 35px;
-  	border-bottom: 0.15vw solid #99c9de;	
+  	border-bottom: 0.15vw solid #99c9de;
 }
 
 td {
@@ -286,7 +290,7 @@ td {
 .container {
 	display: flex;
 	align-items: center;
-	padding-left: 35px; 
+	padding-left: 35px;
 }
 
 .container input {

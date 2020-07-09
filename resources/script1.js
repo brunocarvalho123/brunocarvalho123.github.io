@@ -376,8 +376,7 @@ function settings(){
  		document.getElementById("user2").innerHTML = "Player 2";
 	}
 	sizeT = document.getElementById('range1').value;
-	document.getElementById("setting").style.display= "none";
-	document.getElementById("menuoptions").style.display = "block";
+	BackFromBoard();
 }
 
 function settings2(size_temp){

@@ -29,6 +29,7 @@ function BackFromBoard() {
 	document.getElementById("instructions").style.display = "none";
 	document.getElementById("setting").style.display = "none";
 	document.getElementById("scores").style.display = "none";
+	document.getElementById("savechanges").style.display = "none";
 	document.getElementById("body1").style.backgroundImage = "url('./resources/background_02.png')";
 	if(online==1){
 		online=0;
@@ -46,6 +47,7 @@ function Oneplayer(){
 
 function Settings(){
 	GoToStuff();
+	document.getElementById("savechanges").style.display = "block";
 	document.getElementById("setting").style.display = "block";
 }
 
