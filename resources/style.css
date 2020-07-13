@@ -186,53 +186,59 @@ h1 {
 }
 
 input[type="range"]{
-	width: 200px;
-	height: 12px;
+	width: 10.5vw;
+	height: 1.35vh;
 	-webkit-appearance: none;
 	outline: none;
 	background-color: rgba(0, 0, 0, 0);
+	margin-left: 1.7vw;
+}
+
+#range1{
+	margin-left: 4.3vw;
 }
 
 /*Chrome and Opera*/
 input[type="range"]::-webkit-slider-runnable-track{
 	background: #ccc;
-	height: 4px;
-	border-radius: 4px;
+	height: 0.51vh;
+	border-radius: 0.41vh;
 }
 
 input[type="range"]::-webkit-slider-thumb{
 	-webkit-appearance: none;
-	width: 28px;
-	height: 28px;
+	width: 2.5vh;
+	height: 2.5vh;
 	border-radius: 50%;
-	margin-top: -12px;
+	margin-top: -1vh;
 	cursor: pointer;
 	box-sizing: border-box !important;
-	padding: 3px !important;
+	padding: 0.15vw !important;
 	color: #99c9de;
 	background: #99c9de content-box !important;
-	border: 3px solid #99c9de !important;
-	box-shadow: 1px 1px 10px 4px rgba(0,0,0,.75);
+	border: 0.1vw solid #99c9de !important;
+	box-shadow: 0.1vh 0.1vh 1vh 0.4vh rgba(0,0,0,.50);
 }
 
+/*Firefox*/
 input[type="range"]::-moz-range-track{
 	background: #ccc;
-	height: 4px;
-	border-radius: 4px;
+	height: 0.41vh;
+	border-radius: 0.41vh;
 }
 
 input[type="range"]::-moz-range-thumb{
-	width: 28px;
-	height: 28px;
+	width: 2.5vh;
+	height: 2.5vh;
 	border-radius: 50%;
-	margin-top: -12px;
+	margin-top: -1vh;
 	cursor: pointer;
 	box-sizing: border-box !important;
-	padding: 3px !important;
+	padding: 0.15vw !important;
 	color: #99c9de;
 	background: #99c9de content-box !important;
-	border: 3px solid #99c9de !important;
-	box-shadow: 1px 1px 10px 4px rgba(0,0,0,.75);
+	border: 0.1vw solid #99c9de !important;
+	box-shadow: 0.1vh 0.1vh 1vh 0.4vh rgba(0,0,0,.50);
 }
 
 .nm{
@@ -289,7 +295,7 @@ input[type="range"]::-moz-range-thumb{
 	font-family: 'Signika', sans-serif;
 	font-size: 3vmin;
 	color: white;
-	margin-left: 35px;
+	margin-left: 1.7vw;
 }
 
 .mode{
@@ -297,8 +303,8 @@ input[type="range"]::-moz-range-thumb{
 }
 
 #mode_ai{
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 7vh;
+	margin-bottom: 7vh;
 }
 
 .modeoptions {
@@ -356,14 +362,14 @@ td {
 	height: 2vh;
 	width: 2vh;
 	border-radius: 100%;
-	border: 0.13vw solid #99c9de;
+	border: 0.12vw solid #99c9de;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .container input:checked ~ .checkmark {
-	border: 0.13vw solid #99c9de;
+	border: 0.12vw solid #99c9de;
 }
 
 .checkmark:after {
