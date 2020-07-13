@@ -18,6 +18,7 @@ function GoToStuff() {
 	document.getElementById("home").style.display = "none";
 	document.getElementById("home2").style.display = "block";
 	document.getElementById("helpB").style.display = "list-item";
+	document.getElementById("backbutton").style.marginTop = "55px";
 }
 
 function BackFromBoard() {
@@ -30,6 +31,7 @@ function BackFromBoard() {
 	document.getElementById("setting").style.display = "none";
 	document.getElementById("scores").style.display = "none";
 	document.getElementById("savechanges").style.display = "none";
+	document.getElementById("backbutton").style.marginTop = "55px";
 	document.getElementById("body1").style.backgroundImage = "url('./resources/background_02.png')";
 	if(online==1){
 		online=0;
@@ -47,6 +49,7 @@ function Oneplayer(){
 
 function Settings(){
 	GoToStuff();
+	document.getElementById("backbutton").style.marginTop = "0px";
 	document.getElementById("savechanges").style.display = "block";
 	document.getElementById("setting").style.display = "block";
 }
